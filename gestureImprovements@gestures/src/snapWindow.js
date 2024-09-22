@@ -117,7 +117,7 @@ const TilePreview = registerClass(class TilePreview extends St.Widget {
 				// snap-left,normal,snap-right
 				else {
 					if (state !== GestureTileState.NORMAL) {
-						const keys = [Clutter.KEY_Super_L, (state === GestureTileState.LEFT_TILE ? Clutter.KEY_Left : Clutter.KEY_Right)];
+						const keys = [Clutter.KEY_Alt_L, Clutter.KEY_Super_L, (state === GestureTileState.LEFT_TILE ? Clutter.KEY_h : Clutter.KEY_l)];
 						this._virtualDevice.sendKeys(keys);
 					}
 				}
